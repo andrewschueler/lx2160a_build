@@ -15,7 +15,7 @@ A docker image providing a consistent build environment can be used as below:
 
 1. build container image (first time only)
    ```
-   docker build -t lx2160a_build docker
+   docker build -t lx2160a_build docker --no-cache
    # optional with an apt proxy, e.g. apt-cacher-ng
    # docker build --build-arg APTPROXY=http://127.0.0.1:3142 -t lx2160a_build docker
    ```
